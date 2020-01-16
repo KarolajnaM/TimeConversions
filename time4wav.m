@@ -17,15 +17,16 @@ function t = time4wav(l,fs,st)
   ## l sekund w nagraniu uzyskamy przez podzielenie przez fs
   s = l./fs;
   
-  sb = zeros(length(s),5);
-  sb = [sb,s];
+  ## addtodate dodaje zadany element czasu do istniejacego timestampu
+  t = addtodate(st,s,'second');
   
-  sn = feval(@datenum,sb);
-  t = sn.+st;
-
+  
+  ##sb = zeros(length(s),5);
+  ##sb = [sb,s];
+  ##sn = feval(@datenum,sb);
+  ##t = sn.+st;
+## jezeli chcesz wypychac inny format !!! moze zajac b duzo czasu dna duzych plikow
 ##  %t = datestr(st + sn,'yyyymmddTHHMMSS.FFF');
-;
-  
-  
+
   
 endfunction
