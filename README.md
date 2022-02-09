@@ -1,2 +1,2 @@
 # TimeConversions
-Konwersje miedzy czasami octabve, unix, uts itp
+Konwersje miedzy czasami octavr/matlab, unix, uts itp
